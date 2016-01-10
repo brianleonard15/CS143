@@ -56,11 +56,11 @@ public class RecordId implements Serializable {
     public boolean equals(Object o) {
         // some code goes here
         // Donesies
-        if (o.getClass() != RecordId.class) {
+        if (!(o instanceof RecordId)) {
             return false;
         }
         RecordId oRecordId = (RecordId) o;
-        return (this.pid == oRecordId.getPageId() && this.tupleno == oRecordId.tupleno());
+        return (this.pid.equals(oRecordId.getPageId()) && this.tupleno == oRecordId.tupleno());
     }
 
     /**

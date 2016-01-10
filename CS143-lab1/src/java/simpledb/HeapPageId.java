@@ -59,7 +59,7 @@ public class HeapPageId implements PageId {
     public boolean equals(Object o) {
         // some code goes here
         // Donesies
-        if (o.getClass() != PageId.class) {
+        if (o == null || !(o instanceof PageId)) {
             return false;
         }
         PageId oPageId = (PageId) o;
