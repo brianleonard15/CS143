@@ -26,7 +26,7 @@ public class PageIterator implements Iterator<Tuple> {
 
     public Tuple next() {
         if (!hasNext())
-            throw new NullPointerException();
+            throw new NoSuchElementException();
         return this.page.tuples[this.index++];
     }
 
