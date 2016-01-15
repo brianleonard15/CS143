@@ -29,7 +29,7 @@ public class FileIterator implements DbFileIterator{
 
     /** @return true if there are more tuples available. */
     public boolean hasNext() throws DbException, TransactionAbortedException {
-        return (this.iterator == null || !this.iterator.hasNext() || this.i >= this.file.numPages()) ? false : true;
+        return this.iterator != null && (this.i < this.file.numPages() - 1 || this.iterator.hasNext());
     }
 
     /**
@@ -43,9 +43,14 @@ public class FileIterator implements DbFileIterator{
         if (!hasNext()) {
             throw new NoSuchElementException();
         }
-        if (this.iterator.hasNext()) return this.iterator.next();
-        open();
-        return this.iterator.next();
+        if (this.iterator.hasNext()) {
+            return this.iterator.next();
+        }
+        else {
+            this.i++;
+            open();
+            return this.iterator.next();
+        }
     }
 
     /**
