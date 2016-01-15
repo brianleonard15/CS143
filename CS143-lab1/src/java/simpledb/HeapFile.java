@@ -85,6 +85,7 @@ public class HeapFile implements DbFile {
         {
 
         }
+        return null;
     }
 
     // see DbFile.java for javadocs
