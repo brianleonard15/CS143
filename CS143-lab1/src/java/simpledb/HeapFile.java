@@ -175,7 +175,7 @@ public class HeapFile implements DbFile {
     public DbFileIterator iterator(TransactionId tid) {
         // some code goes here
         // Donesies
-        return new FileIterator(this, tid);
+        return new FileIterator(getId(), numPages(), tid);
     }
 
 }

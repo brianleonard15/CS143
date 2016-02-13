@@ -6,30 +6,71 @@ import java.util.*;
  * Created by bleonard on 1/10/16.
  */
 public class FileIterator implements DbFileIterator{
-
-    private HeapFile file;
+    private int tableid;
+    private int numPages;
+    private int currentPage;
     private TransactionId tid;
-    private int i;
-    private Iterator<Tuple> iterator;
+    private Iterator<Tuple> pageIterator;
 
-    public FileIterator(HeapFile file, TransactionId tid) {
-        this.file = file;
+    /**
+     * Constructs an iterator from the specified table id and transaction
+     * id
+     *
+     * @param tableid
+     *            The tableid to iterate over
+     * @param numPages
+     *            The total number of pages in the HeapFile
+     * @param tid
+     *            The transaction id
+     *
+     */
+    public FileIterator(int tableid, int numPages, TransactionId tid) {
+        this.tableid = tableid;
+        this.numPages = numPages;
         this.tid = tid;
-        this.i = 0;
     }
+
+    /**
+     * Gets the HeapPage's tuple iterator given a page number - this uses the
+     * BufferPool
+     * @throws DbException when there are problems opening/accessing the database.
+     */
+    private Iterator<Tuple> getPageIterator(int pageNo)
+            throws DbException, TransactionAbortedException {
+        PageId pid = new HeapPageId(this.tableid, pageNo);
+        BufferPool bp = Database.getBufferPool();
+        HeapPage page = (HeapPage)bp.getPage(this.tid, pid, Permissions.READ_ONLY);
+        return page.iterator();
+    }
+
     /**
      * Opens the iterator
      * @throws DbException when there are problems opening/accessing the database.
      */
-    public void open() throws DbException, TransactionAbortedException {
-        PageId pageId = new HeapPageId(this.file.getId(), i);
-        HeapPage heapPage = (HeapPage)Database.getBufferPool().getPage(this.tid, pageId, Permissions.READ_ONLY);
-        this.iterator = heapPage.iterator();
+    public void open()
+            throws DbException, TransactionAbortedException {
+        this.currentPage = 0;
+        this.pageIterator = getPageIterator(this.currentPage);
     }
 
     /** @return true if there are more tuples available. */
-    public boolean hasNext() throws DbException, TransactionAbortedException {
-        return this.iterator != null && (this.i < this.file.numPages() - 1 || this.iterator.hasNext());
+    public boolean hasNext()
+            throws DbException, TransactionAbortedException {
+        if (this.pageIterator == null) {
+            return false;
+        }
+        if (this.pageIterator.hasNext()) {
+            return true;
+        } else {
+            while (this.currentPage < (numPages - 1)) {
+                this.currentPage++;
+                this.pageIterator = getPageIterator(this.currentPage);
+                if (this.pageIterator.hasNext()) {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 
     /**
@@ -39,17 +80,12 @@ public class FileIterator implements DbFileIterator{
      * @return The next tuple in the iterator.
      * @throws NoSuchElementException if there are no more tuples
      */
-    public Tuple next() throws DbException, TransactionAbortedException, NoSuchElementException {
-        if (!hasNext()) {
+    public Tuple next()
+            throws DbException, TransactionAbortedException, NoSuchElementException {
+        if (hasNext()) {
+            return this.pageIterator.next();
+        } else {
             throw new NoSuchElementException();
-        }
-        if (this.iterator.hasNext()) {
-            return this.iterator.next();
-        }
-        else {
-            this.i++;
-            open();
-            return this.iterator.next();
         }
     }
 
@@ -57,8 +93,9 @@ public class FileIterator implements DbFileIterator{
      * Resets the iterator to the start.
      * @throws DbException When rewind is unsupported.
      */
-    public void rewind() throws DbException, TransactionAbortedException {
-        this.i = 0;
+    public void rewind()
+            throws DbException, TransactionAbortedException {
+        close();
         open();
     }
 
@@ -66,7 +103,7 @@ public class FileIterator implements DbFileIterator{
      * Closes the iterator.
      */
     public void close() {
-        this.iterator = null;
-        this.i = 0;
+        this.currentPage = 0;
+        this.pageIterator = null;
     }
 }
