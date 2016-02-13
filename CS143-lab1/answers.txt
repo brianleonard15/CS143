@@ -1,0 +1,12 @@
+For BufferPool, I used a HashMap of PageIds as the keys and Pages as the values.
+For the iterator method of HeapPage, I created a new class called PageIterator.
+For the iterator method of HeapFile, I created a new class called FileIterator.
+In the Catalog class, I chose to use what I deem a DoubleMap, which is a separate class I created
+that essentially is a HashMap except with two keys for 1 value. I did this to make accessing values in
+this map easier and the way I wrote the DoubleMap class, adding new hashes always stays up to date
+for both keys, rather than having just two Hashmaps floating around, where you may add a key value pair
+to one map, but not the other.
+
+As far as I know, all the code is complete.
+
+I spent about 2 and a half nights on the project, so I would guess roughly 10 hours plus or minus 3. I had trouble because I was passing all the unit tests, but was not passing the ScanTest, which was far more difficult to debug and the issues turned out to be in two different files.
