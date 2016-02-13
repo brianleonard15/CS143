@@ -15,7 +15,7 @@ import java.util.*;
  * The BufferPool is also responsible for locking;  when a transaction fetches
  * a page, BufferPool checks that the transaction has the appropriate
  * locks to read/write the page.
- * 
+ *
  * @Threadsafe, all fields are final
  */
 public class BufferPool {
@@ -26,7 +26,7 @@ public class BufferPool {
 
     private int maxPages;
     private HashMap<PageId, Page> cache;
-    
+
     /** Default number of pages passed to the constructor. This is used by
     other classes. BufferPool should use the numPages argument to the
     constructor instead. */
@@ -42,11 +42,11 @@ public class BufferPool {
         this.maxPages = numPages;
         this.cache = new HashMap<PageId, Page>();
     }
-    
+
     public static int getPageSize() {
       return pageSize;
     }
-    
+
     // THIS FUNCTION SHOULD ONLY BE USED FOR TESTING!!
     public static void setPageSize(int pageSize) {
     	BufferPool.pageSize = pageSize;
@@ -76,7 +76,7 @@ public class BufferPool {
         }
         else {
             if (maxPages <= this.cache.size() ) {
-                throw new DbException("insufficient space in buffer pool");
+                evictPage();
             }
             Page page = Database.getCatalog().getDatabaseFile(pid.getTableId()).readPage(pid);
             this.cache.put(pid, page);
@@ -130,13 +130,13 @@ public class BufferPool {
 
     /**
      * Add a tuple to the specified table on behalf of transaction tid.  Will
-     * acquire a write lock on the page the tuple is added to and any other 
-     * pages that are updated (Lock acquisition is not needed for lab2). 
+     * acquire a write lock on the page the tuple is added to and any other
+     * pages that are updated (Lock acquisition is not needed for lab2).
      * May block if the lock(s) cannot be acquired.
-     * 
+     *
      * Marks any pages that were dirtied by the operation as dirty by calling
-     * their markDirty bit, and updates cached versions of any pages that have 
-     * been dirtied so that future requests see up-to-date pages. 
+     * their markDirty bit, and updates cached versions of any pages that have
+     * been dirtied so that future requests see up-to-date pages.
      *
      * @param tid the transaction adding the tuple
      * @param tableId the table to add the tuple to
@@ -164,8 +164,8 @@ public class BufferPool {
      * other pages that are updated. May block if the lock(s) cannot be acquired.
      *
      * Marks any pages that were dirtied by the operation as dirty by calling
-     * their markDirty bit, and updates cached versions of any pages that have 
-     * been dirtied so that future requests see up-to-date pages. 
+     * their markDirty bit, and updates cached versions of any pages that have
+     * been dirtied so that future requests see up-to-date pages.
      *
      * @param tid the transaction deleting the tuple.
      * @param t the tuple to delete
@@ -196,6 +196,10 @@ public class BufferPool {
     public synchronized void flushAllPages() throws IOException {
         // some code goes here
         // not necessary for lab1
+        // Done
+        for (PageId pid : cache.keySet()) {
+            flushPage(pid);
+        }
 
     }
 
@@ -216,6 +220,11 @@ public class BufferPool {
     private synchronized  void flushPage(PageId pid) throws IOException {
         // some code goes here
         // not necessary for lab1
+        // Done
+        Page page = this.cache.get(pid);
+        HeapFile heapFile = (HeapFile)Database.getCatalog().getDatabaseFile(pid.getTableId());
+        heapFile.writePage(page);
+        page.markDirty(false, null);
     }
 
     /** Write all pages of the specified transaction to disk.
@@ -232,6 +241,17 @@ public class BufferPool {
     private synchronized  void evictPage() throws DbException {
         // some code goes here
         // not necessary for lab1
+        // Done
+        Random random = new Random();
+        ArrayList<PageId> keys = new ArrayList<PageId>(this.cache.keySet());
+        PageId randomPid = keys.get( random.nextInt(keys.size()));
+        try {
+            flushPage(randomPid);
+        } catch (IOException e) {
+            throw new DbException("IOException when flushing page");
+        }
+        this.cache.remove(randomPid);
+        //this.numPages--;
     }
 
 }
