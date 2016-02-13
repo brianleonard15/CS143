@@ -27,14 +27,14 @@ public class Join extends Operator {
 
     public Join(JoinPredicate p, DbIterator child1, DbIterator child2) {
         // some code goes here
-        // ADDED
+        // Done
         this.children = new DbIterator[] {child1, child2};
         this.p = p;
     }
 
     public JoinPredicate getJoinPredicate() {
         // some code goes here
-        // ADDED
+        // Done
         return this.p;
     }
 
@@ -45,7 +45,7 @@ public class Join extends Operator {
      * */
     public String getJoinField1Name() {
         // some code goes here
-        // ADDED
+        // Done
         TupleDesc td = this.children[0].getTupleDesc();
         return td.getFieldName(this.p.getField1());
     }
@@ -57,7 +57,7 @@ public class Join extends Operator {
      * */
     public String getJoinField2Name() {
         // some code goes here
-        // ADDED
+        // Done
         TupleDesc td = this.children[1].getTupleDesc();
         return td.getFieldName(this.p.getField2());
     }
@@ -68,7 +68,7 @@ public class Join extends Operator {
      */
     public TupleDesc getTupleDesc() {
         // some code goes here
-        // ADDED
+        // Done
         TupleDesc td1 = this.children[0].getTupleDesc();
         TupleDesc td2 = this.children[1].getTupleDesc();
         return TupleDesc.merge(td1, td2);
@@ -77,7 +77,7 @@ public class Join extends Operator {
     public void open() throws DbException, NoSuchElementException,
             TransactionAbortedException {
         // some code goes here
-        // ADDED
+        // Done
         super.open();
         this.children[0].open();
         this.children[1].open();
@@ -96,7 +96,7 @@ public class Join extends Operator {
 
     public void rewind() throws DbException, TransactionAbortedException {
         // some code goes here
-        // ADDED
+        // Done
         this.children[0].rewind();
         this.children[1].rewind();
     }
@@ -121,7 +121,7 @@ public class Join extends Operator {
      */
     protected Tuple fetchNext() throws TransactionAbortedException, DbException {
         // some code goes here
-        // ADDED
+        // Done
         Tuple t1 = this.currentOuterTuple;
         while (t1 != null && this.children[1].hasNext()) {
             Tuple t2 = this.children[1].next();
@@ -150,7 +150,7 @@ public class Join extends Operator {
     @Override
     public DbIterator[] getChildren() {
         // some code goes here
-        // ADDED
+        // Done
         return this.children;
     }
 
