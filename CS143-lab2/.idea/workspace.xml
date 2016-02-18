@@ -2,116 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acbeaaa6-05ea-475f-802f-978f0f653fb7" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/AbstractDbFileIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Aggregate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/AggregateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Aggregator$Op.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Aggregator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/BufferPool.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Catalog$Table.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Catalog.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/CatalogTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/CostCard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Database.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/DbException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/DbFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/DbFileIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/DbIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Debug.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Delete.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/DoubleMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Field.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/FileIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Filter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/FilterTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapFileEncoder.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapFileReadTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapFileWriteTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapPage.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapPageId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapPageIdTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapPageReadTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/HeapPageWriteTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/IDoubleMap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Insert.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/InsertTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/IntField$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/IntField.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/IntHistogram.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/IntegerAggregator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/IntegerAggregatorTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Join.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/JoinOptimizer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/JoinPredicate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/JoinPredicateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/JoinTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/LogFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/LogicalFilterNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/LogicalJoinNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/LogicalPlan.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/LogicalScanNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/LogicalSelectListNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/LogicalSubplanJoinNode.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Operator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/OrderBy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Page.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/PageId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/PageIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Parser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/ParsingException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Permissions.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/PlanCache.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Predicate$Op.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Predicate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/PredicateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Project.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Query.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/RecordId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/RecordIdTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/SeqScan.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/SimpleDb.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/StringAggregator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/StringAggregatorTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/StringField$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/StringField.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/StringHistogram.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TableStats.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$CreateHeapFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$LockGrabber.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$MockScan.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil$SkeletonFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TestUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Transaction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TransactionAbortedException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TransactionId.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Tuple.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TupleArrayIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TupleComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TupleDesc$TDItem.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TupleDesc.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TupleDescTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TupleIterator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/TupleTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Type$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Type$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Type.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/Utility.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/AggregateTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/AggregateTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/DeleteTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/EvictionTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/FilterBase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/FilterTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/InsertTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/JoinTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/ScanTest$1InstrumentedHeapFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/ScanTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/SimpleDbTestBase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/bin/src/simpledb/systemtest/SystemTestUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/simpledb.jar" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/src/simpledb/BufferPool.class" afterPath="$PROJECT_DIR$/bin/src/simpledb/BufferPool.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/answers.txt" afterPath="$PROJECT_DIR$/answers.txt" />
     </list>
     <ignored path="CS143-lab1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1011,7 +903,7 @@
       <workItem from="1454454505988" duration="383000" />
       <workItem from="1454697543529" duration="293000" />
       <workItem from="1455326554920" duration="8000" />
-      <workItem from="1455326873135" duration="7615000" />
+      <workItem from="1455326873135" duration="7204000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Did BufferPool&quot;">
       <created>1452222265604</created>
@@ -1127,7 +1019,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41936000" />
+    <option name="totallyTimeSpent" value="41525000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1469" y="26" width="1342" height="1019" extended-state="0" />
@@ -1140,7 +1032,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32953683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22437972" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22437972" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24029382" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23615384" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
