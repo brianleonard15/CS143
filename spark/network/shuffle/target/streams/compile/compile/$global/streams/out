@@ -1,0 +1,167 @@
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mInitial source changes: [0m
+[0m[[0mdebug[0m] [0m	removed:Set()[0m
+[0m[[0mdebug[0m] [0m	added: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/BlockFetchingListener.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslServer.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/UploadBlock.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslMessage.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/ExecutorShuffleInfo.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslClientBootstrap.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ShuffleClient.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/OneForOneBlockFetcher.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/RegisterExecutor.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/StreamHandle.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleClient.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/RetryingBlockFetcher.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockManager.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslClient.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SecretKeyHolder.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/OpenBlocks.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/BlockTransferMessage.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockHandler.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslRpcHandler.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/ShuffleSecretManager.java)[0m
+[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0mRemoved products: Set()[0m
+[0m[[0mdebug[0m] [0mExternal API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/BlockFetchingListener.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslServer.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/UploadBlock.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslMessage.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/ExecutorShuffleInfo.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslClientBootstrap.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ShuffleClient.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/OneForOneBlockFetcher.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/RegisterExecutor.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/StreamHandle.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleClient.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/RetryingBlockFetcher.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockManager.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslClient.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SecretKeyHolder.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/OpenBlocks.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/BlockTransferMessage.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockHandler.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslRpcHandler.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/ShuffleSecretManager.java)[0m
+[0m[[0mdebug[0m] [0m[0m
+[0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m	product: Set()[0m
+[0m[[0mdebug[0m] [0m	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/BlockFetchingListener.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslServer.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/UploadBlock.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslMessage.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/ExecutorShuffleInfo.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslClientBootstrap.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ShuffleClient.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/OneForOneBlockFetcher.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/RegisterExecutor.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/StreamHandle.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleClient.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/RetryingBlockFetcher.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockManager.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslClient.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SecretKeyHolder.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/OpenBlocks.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/BlockTransferMessage.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockHandler.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslRpcHandler.java, /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/ShuffleSecretManager.java)[0m
+[0m[[0mdebug[0m] [0mRecompiling all 20 sources: invalidated sources (20) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 20 Java sources to /Users/bleonard/Documents/Databases/spark/network/shuffle/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mForking javac: /Library/Java/JavaVirtualMachines/jdk1.7.0_79.jdk/Contents/Home/bin/javac @/var/folders/md/gpkdz3hs0m19687gx_4_t4wm0000gn/T/sbt_9e3e03a8/argfile[0m
+[0m[[0mdebug[0m] [0mjavac returned exit code: 0[0m
+[0m[[0mdebug[0m] [0mJava compilation took 0.780756 s[0m
+[0m[[0mdebug[0m] [0mJava analysis took 0.002141 s[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslServer.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslServer.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslServer.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslServer.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslServer.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslRpcHandler.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslRpcHandler.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslRpcHandler.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslRpcHandler.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslRpcHandler.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleClient.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleClient.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleClient.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleClient.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleClient.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/RegisterExecutor.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/RegisterExecutor.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/RegisterExecutor.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/RegisterExecutor.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/RegisterExecutor.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslMessage.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslMessage.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslMessage.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslMessage.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslMessage.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SecretKeyHolder.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SecretKeyHolder.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SecretKeyHolder.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SecretKeyHolder.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SecretKeyHolder.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockManager.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockManager.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockManager.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockManager.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockManager.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/UploadBlock.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/UploadBlock.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/UploadBlock.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/UploadBlock.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/UploadBlock.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/ExecutorShuffleInfo.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/ExecutorShuffleInfo.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/ExecutorShuffleInfo.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/ExecutorShuffleInfo.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/ExecutorShuffleInfo.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/RetryingBlockFetcher.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/RetryingBlockFetcher.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/RetryingBlockFetcher.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/RetryingBlockFetcher.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/RetryingBlockFetcher.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/StreamHandle.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/StreamHandle.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/StreamHandle.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/StreamHandle.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/StreamHandle.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/BlockTransferMessage.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/BlockTransferMessage.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/BlockTransferMessage.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/BlockTransferMessage.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/BlockTransferMessage.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockHandler.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockHandler.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockHandler.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockHandler.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ExternalShuffleBlockHandler.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslClient.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslClient.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslClient.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslClient.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SparkSaslClient.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslClientBootstrap.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslClientBootstrap.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslClientBootstrap.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslClientBootstrap.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/SaslClientBootstrap.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/OpenBlocks.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/OpenBlocks.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/OpenBlocks.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/OpenBlocks.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/protocol/OpenBlocks.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/ShuffleSecretManager.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/ShuffleSecretManager.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/ShuffleSecretManager.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/ShuffleSecretManager.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/sasl/ShuffleSecretManager.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ShuffleClient.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ShuffleClient.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ShuffleClient.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ShuffleClient.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/ShuffleClient.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/BlockFetchingListener.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/BlockFetchingListener.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/BlockFetchingListener.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/BlockFetchingListener.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/BlockFetchingListener.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mInvalidating /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/OneForOneBlockFetcher.java...[0m
+[0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/OneForOneBlockFetcher.java...[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/OneForOneBlockFetcher.java)[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive inheritance dependency: Set(/Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/OneForOneBlockFetcher.java)[0m
+[0m[[0mdebug[0m] [0mThe /Users/bleonard/Documents/Databases/spark/network/shuffle/src/main/java/org/apache/spark/network/shuffle/OneForOneBlockFetcher.java source file has the following regular definitions changed:[0m
+[0m[[0mdebug[0m] [0m	.[0m
+[0m[[0mdebug[0m] [0mAll member reference dependencies will be considered within this context.[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mInitial set of included nodes: Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mAll newly invalidated sources after taking into account (previously) recompiled sources:Set()[0m
