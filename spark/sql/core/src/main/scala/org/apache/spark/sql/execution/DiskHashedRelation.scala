@@ -64,6 +64,12 @@ private[sql] class DiskPartition (
    */
   def insert(row: Row) = {
     // IMPLEMENT ME
+    // Done
+    data.add(row)
+    var partitionSize: Int = measurePartitionSize()
+    if (partitionSize > blockSize) {
+      spillAndClear()
+    }
   }
 
   /**
@@ -89,6 +95,12 @@ private[sql] class DiskPartition (
     writtenToDisk = true
   }
 
+  // I added this cuz it was getting repetitive
+  private[this] def spillAndClear() = {
+    spillPartitionToDisk()
+    data.clear()
+  }
+
   /**
    * If this partition has been closed, this method returns an Iterator of all the
    * data that was written to disk by this partition.
@@ -107,12 +119,22 @@ private[sql] class DiskPartition (
 
       override def next() = {
         // IMPLEMENT ME
-        null
+        // Done
+        currentIterator.next()
       }
 
       override def hasNext() = {
         // IMPLEMENT ME
-        false
+        // Done
+        if (currentIterator != null && !currentIterator.hasNext) {
+          if (chunkSizeIterator.hasNext) {
+            fetchNextChunk()
+          }
+          else {
+            false
+          }
+        }
+        true
       }
 
       /**
@@ -123,7 +145,14 @@ private[sql] class DiskPartition (
        */
       private[this] def fetchNextChunk(): Boolean = {
         // IMPLEMENT ME
-        false
+        if (chunkSizeIterator.isEmpty) {
+          return false
+        }
+        // Fetch next chunk
+        byteArray = CS143Utils.getNextChunkBytes(inStream, chunkSizeIterator.next(), byteArray)
+        // Update iterator
+        currentIterator = CS143Utils.getListFromBytes(byteArray).iterator.asScala;
+        return true
       }
     }
   }
@@ -137,6 +166,11 @@ private[sql] class DiskPartition (
    */
   def closeInput() = {
     // IMPLEMENT ME
+    // Done
+    if(data.size() > 0){
+      spillAndClear()
+    }
+    outStream.close()
     inputClosed = true
   }
 
