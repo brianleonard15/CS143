@@ -1,9 +1,12 @@
 package org.apache.spark.sql.execution
 
 import java.io._
+import java.util
 import java.util.{ArrayList => JavaArrayList, HashMap => JavaHashMap}
 
 import org.apache.spark.sql.catalyst.expressions._
+
+import scala.collection.mutable.ArrayBuffer
 
 object CS143Utils {
 
@@ -106,7 +109,8 @@ object CS143Utils {
    */
   def getUdfFromExpressions(expressions: Seq[Expression]): ScalaUdf = {
     // IMPLEMENT ME
-    null
+    // Done
+    expressions.collect {case i:ScalaUdf => i}.last
   }
 
   /**
@@ -189,12 +193,27 @@ object CachingIteratorGenerator {
 
         def hasNext() = {
           // IMPLEMENT ME
-          false
+          // Done
+          input.hasNext
         }
 
         def next() = {
           // IMPLEMENT ME
-          null
+          // Done
+          val inputNext = input.next()
+          val key: Row = cacheKeyProjection.apply(inputNext)
+          var udfValue: Row = cache.get(key)
+          var totalRow: Seq[Any] = preUdfProjection.apply(inputNext)
+          if (udfValue == null) {
+            val newUdf = udfProject.apply(inputNext)
+            totalRow ++= newUdf
+            cache.put(key, newUdf)
+          }
+          else {
+            totalRow ++= udfValue
+          }
+          totalRow ++= postUdfProjection.apply(inputNext)
+          new GenericRow(totalRow.toArray)
         }
       }
     }
