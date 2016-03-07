@@ -22,5 +22,5 @@ public  class DiskHashedRelation$ {
    * @param blockSize the threshold at which each partition will spill
    * @return the constructed {@link DiskHashedRelation}
    */
-  public  scala.Null apply (scala.collection.Iterator<org.apache.spark.sql.catalyst.expressions.Row> input, org.apache.spark.sql.catalyst.expressions.Projection keyGenerator, int size, int blockSize) { throw new RuntimeException(); }
+  public  org.apache.spark.sql.execution.GeneralDiskHashedRelation apply (scala.collection.Iterator<org.apache.spark.sql.catalyst.expressions.Row> input, org.apache.spark.sql.catalyst.expressions.Projection keyGenerator, int size, int blockSize) { throw new RuntimeException(); }
 }

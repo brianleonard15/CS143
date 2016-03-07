@@ -2,15 +2,15 @@
 [0m[[0mdebug[0m] [0mCreate a single-thread test executor[0m
 [0m[[0mdebug[0m] [0mRunner for sbt.FrameworkWrapper produced 0 initial tasks for 0 tests.[0m
 [0m[[0mdebug[0m] [0mRunner for org.scalatest.tools.Framework produced 1 initial tasks for 1 tests.[0m
-[0m[[0mdebug[0m] [0m  Running TaskDef(org.apache.spark.sql.execution.DiskPartitionSuite, sbt.ForkMain$SubclassFingerscan@7484c2bf, false, [SuiteSelector])[0m
-[0m[[0minfo[0m] [0m[32mDiskPartitionSuite:[0m[0m
-[0m[[0minfo[0m] [0m[32m- disk partition (499 milliseconds)[0m[0m
-[0m[[0minfo[0m] [0m[32m- close input (1 millisecond)[0m[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(org.apache.spark.sql.execution.DiskHashedRelationSuite, sbt.ForkMain$SubclassFingerscan@3d959415, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0m[32mDiskHashedRelationSuite:[0m[0m
+[0m[[0minfo[0m] [0m[32m- values are in correct partition (217 milliseconds)[0m[0m
+[0m[[0minfo[0m] [0m[32m- empty input (24 milliseconds)[0m[0m
 [0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 2 events.[0m
 [0m[[0mdebug[0m] [0mRunner for sbt.FrameworkWrapper produced 0 initial tasks for 0 tests.[0m
 [0m[[0mdebug[0m] [0mSummary for ScalaCheck not available.[0m
 [0m[[0minfo[0m] [0mScalaTest[0m
-[0m[[0minfo[0m] [0m[36mRun completed in 1 second, 271 milliseconds.[0m[0m
+[0m[[0minfo[0m] [0m[36mRun completed in 1 second, 4 milliseconds.[0m[0m
 [0m[[0minfo[0m] [0m[36mTotal number of tests run: 2[0m[0m
 [0m[[0minfo[0m] [0m[36mSuites: completed 1, aborted 0[0m[0m
 [0m[[0minfo[0m] [0m[36mTests: succeeded 2, failed 0, canceled 0, ignored 0, pending 0[0m[0m
@@ -18,4 +18,4 @@
 [0m[[0mdebug[0m] [0mSummary for JUnit not available.[0m
 [0m[[0minfo[0m] [0mPassed: Total 2, Failed 0, Errors 0, Passed 2[0m
 [0m[[0mdebug[0m] [0mPassed tests:[0m
-[0m[[0mdebug[0m] [0m	org.apache.spark.sql.execution.DiskPartitionSuite[0m
+[0m[[0mdebug[0m] [0m	org.apache.spark.sql.execution.DiskHashedRelationSuite[0m
