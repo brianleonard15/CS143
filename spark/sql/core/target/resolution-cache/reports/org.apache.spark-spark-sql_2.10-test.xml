@@ -7,27 +7,27 @@
 		revision="1.3.0-SNAPSHOT"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160218143733"/>
+		date="20160306224708"/>
 	<dependencies>
 		<module organisation="com.twitter" name="parquet-hadoop">
-			<revision name="1.6.0rc3" status="release" pubdate="20141002143012" resolver="public" artresolver="public" homepage="https://github.com/Parquet/parquet-mr" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="104">
-				<metadata-artifact status="successful" details="" size="2674" time="55" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-hadoop/ivy-1.6.0rc3.xml" searched="true" original-local-location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-hadoop/ivy-1.6.0rc3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.pom"/>
+			<revision name="1.6.0rc3" status="release" pubdate="20141002143012" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="104">
+				<metadata-artifact status="no" details="" size="5937" time="0" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-hadoop/ivy-1.6.0rc3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.pom"/>
 				<caller organisation="org.apache.spark" name="spark-sql_2.10" conf="test, compile, runtime" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="1.3.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="parquet-hadoop" type="jar" ext="jar" status="successful" details="" size="195121" time="98" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-hadoop/jars/parquet-hadoop-1.6.0rc3.jar">
+					<artifact name="parquet-hadoop" type="jar" ext="jar" status="no" details="" size="195121" time="0" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-hadoop/jars/parquet-hadoop-1.6.0rc3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/parquet-hadoop/1.6.0rc3/parquet-hadoop-1.6.0rc3.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.codehaus.jackson" name="jackson-mapper-asl">
-			<revision name="1.9.11" status="release" pubdate="20121106082745" resolver="public" artresolver="public" homepage="http://jackson.codehaus.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="107">
+			<revision name="1.9.11" status="release" pubdate="20121106082745" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="107">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="1244" time="52" location="/Users/bleonard/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/ivy-1.9.11.xml" searched="true" original-local-location="/Users/bleonard/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/ivy-1.9.11.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom"/>
+				<metadata-artifact status="no" details="" size="2655" time="0" location="/Users/bleonard/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/ivy-1.9.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.pom"/>
 				<caller organisation="com.twitter" name="parquet-hadoop" conf="default, compile, runtime, master" rev="1.9.11" rev-constraint-default="1.9.11" rev-constraint-dynamic="1.9.11" callerrev="1.6.0rc3"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0.4"/>
 				<artifacts>
-					<artifact name="jackson-mapper-asl" type="jar" ext="jar" status="successful" details="" size="780421" time="503" location="/Users/bleonard/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.11.jar">
+					<artifact name="jackson-mapper-asl" type="jar" ext="jar" status="no" details="" size="780421" time="0" location="/Users/bleonard/.ivy2/cache/org.codehaus.jackson/jackson-mapper-asl/jars/jackson-mapper-asl-1.9.11.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-mapper-asl/1.9.11/jackson-mapper-asl-1.9.11.jar"/>
 					</artifact>
 				</artifacts>
@@ -42,14 +42,14 @@
 			</revision>
 		</module>
 		<module organisation="org.codehaus.jackson" name="jackson-core-asl">
-			<revision name="1.9.11" status="release" pubdate="20121106082713" resolver="public" artresolver="public" homepage="http://jackson.codehaus.org" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="108">
+			<revision name="1.9.11" status="release" pubdate="20121106082713" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://jackson.codehaus.org" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="108">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="1017" time="73" location="/Users/bleonard/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/ivy-1.9.11.xml" searched="true" original-local-location="/Users/bleonard/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/ivy-1.9.11.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom"/>
+				<metadata-artifact status="no" details="" size="2438" time="0" location="/Users/bleonard/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/ivy-1.9.11.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.pom"/>
 				<caller organisation="com.twitter" name="parquet-hadoop" conf="default, compile, runtime, master" rev="1.9.11" rev-constraint-default="1.9.11" rev-constraint-dynamic="1.9.11" callerrev="1.6.0rc3"/>
 				<caller organisation="org.codehaus.jackson" name="jackson-mapper-asl" conf="compile, runtime" rev="1.9.11" rev-constraint-default="1.9.11" rev-constraint-dynamic="1.9.11" callerrev="1.9.11"/>
 				<caller organisation="org.codehaus.jackson" name="jackson-mapper-asl" conf="compile, runtime" rev="1.0.1" rev-constraint-default="1.0.1" rev-constraint-dynamic="1.0.1" callerrev="1.0.1"/>
 				<artifacts>
-					<artifact name="jackson-core-asl" type="jar" ext="jar" status="successful" details="" size="232131" time="185" location="/Users/bleonard/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.11.jar">
+					<artifact name="jackson-core-asl" type="jar" ext="jar" status="no" details="" size="232131" time="0" location="/Users/bleonard/.ivy2/cache/org.codehaus.jackson/jackson-core-asl/jars/jackson-core-asl-1.9.11.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/codehaus/jackson/jackson-core-asl/1.9.11/jackson-core-asl-1.9.11.jar"/>
 					</artifact>
 				</artifacts>
@@ -64,61 +64,61 @@
 			</revision>
 		</module>
 		<module organisation="com.twitter" name="parquet-jackson">
-			<revision name="1.6.0rc3" status="release" pubdate="20141002142948" resolver="public" artresolver="public" homepage="https://github.com/Parquet/parquet-mr" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="106">
-				<metadata-artifact status="successful" details="" size="3534" time="66" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-jackson/ivy-1.6.0rc3.xml" searched="true" original-local-location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-jackson/ivy-1.6.0rc3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.pom"/>
+			<revision name="1.6.0rc3" status="release" pubdate="20141002142948" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="106">
+				<metadata-artifact status="no" details="" size="5331" time="0" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-jackson/ivy-1.6.0rc3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.pom"/>
 				<caller organisation="com.twitter" name="parquet-hadoop" conf="default, compile, runtime, master" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="1.6.0rc3"/>
 				<artifacts>
-					<artifact name="parquet-jackson" type="jar" ext="jar" status="successful" details="" size="1029040" time="481" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-jackson/jars/parquet-jackson-1.6.0rc3.jar">
+					<artifact name="parquet-jackson" type="jar" ext="jar" status="no" details="" size="1029040" time="0" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-jackson/jars/parquet-jackson-1.6.0rc3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/parquet-jackson/1.6.0rc3/parquet-jackson-1.6.0rc3.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.twitter" name="parquet-format">
-			<revision name="2.2.0-rc1" status="release" pubdate="20140903134820" resolver="public" artresolver="public" homepage="http://parquet.incubator.apache.org/" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="105">
+			<revision name="2.2.0-rc1" status="release" pubdate="20140903134820" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://parquet.incubator.apache.org/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="105">
 				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="9320" time="68" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-format/ivy-2.2.0-rc1.xml" searched="true" original-local-location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-format/ivy-2.2.0-rc1.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.pom"/>
+				<metadata-artifact status="no" details="" size="3958" time="0" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-format/ivy-2.2.0-rc1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.pom"/>
 				<caller organisation="com.twitter" name="parquet-hadoop" conf="default, compile, runtime, master" rev="2.2.0-rc1" rev-constraint-default="2.2.0-rc1" rev-constraint-dynamic="2.2.0-rc1" callerrev="1.6.0rc3"/>
 				<artifacts>
-					<artifact name="parquet-format" type="jar" ext="jar" status="successful" details="" size="375618" time="204" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-format/jars/parquet-format-2.2.0-rc1.jar">
+					<artifact name="parquet-format" type="jar" ext="jar" status="no" details="" size="375618" time="0" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-format/jars/parquet-format-2.2.0-rc1.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/parquet-format/2.2.0-rc1/parquet-format-2.2.0-rc1.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.twitter" name="parquet-column">
-			<revision name="1.6.0rc3" status="release" pubdate="20141002142935" resolver="public" artresolver="public" homepage="https://github.com/Parquet/parquet-mr" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master" position="99">
-				<metadata-artifact status="successful" details="" size="4629" time="53" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-column/ivy-1.6.0rc3.xml" searched="true" original-local-location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-column/ivy-1.6.0rc3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.pom"/>
+			<revision name="1.6.0rc3" status="release" pubdate="20141002142935" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, master(*), compile(*), runtime, runtime(*), master" position="99">
+				<metadata-artifact status="no" details="" size="6089" time="0" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-column/ivy-1.6.0rc3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.pom"/>
 				<caller organisation="com.twitter" name="parquet-hadoop" conf="default, compile, runtime, master" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="1.6.0rc3"/>
 				<caller organisation="org.apache.spark" name="spark-sql_2.10" conf="test, compile, runtime" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="1.3.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="parquet-column" type="jar" ext="jar" status="successful" details="" size="866617" time="315" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-column/jars/parquet-column-1.6.0rc3.jar">
+					<artifact name="parquet-column" type="jar" ext="jar" status="no" details="" size="866617" time="0" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-column/jars/parquet-column-1.6.0rc3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/parquet-column/1.6.0rc3/parquet-column-1.6.0rc3.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.twitter" name="parquet-encoding">
-			<revision name="1.6.0rc3" status="release" pubdate="20141002142853" resolver="public" artresolver="public" homepage="https://github.com/Parquet/parquet-mr" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="101">
-				<metadata-artifact status="successful" details="" size="2087" time="57" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-encoding/ivy-1.6.0rc3.xml" searched="true" original-local-location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-encoding/ivy-1.6.0rc3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.pom"/>
+			<revision name="1.6.0rc3" status="release" pubdate="20141002142853" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="101">
+				<metadata-artifact status="no" details="" size="5042" time="0" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-encoding/ivy-1.6.0rc3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.pom"/>
 				<caller organisation="com.twitter" name="parquet-column" conf="default, compile, runtime, master" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="1.6.0rc3"/>
 				<artifacts>
-					<artifact name="parquet-encoding" type="jar" ext="jar" status="successful" details="" size="272727" time="172" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-encoding/jars/parquet-encoding-1.6.0rc3.jar">
+					<artifact name="parquet-encoding" type="jar" ext="jar" status="no" details="" size="272727" time="0" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-encoding/jars/parquet-encoding-1.6.0rc3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/parquet-encoding/1.6.0rc3/parquet-encoding-1.6.0rc3.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="commons-codec" name="commons-codec">
-			<revision name="1.5" status="release" pubdate="20110324183406" resolver="public" artresolver="public" homepage="http://commons.apache.org/codec/" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="103">
-				<metadata-artifact status="successful" details="" size="10213" time="56" location="/Users/bleonard/.ivy2/cache/commons-codec/commons-codec/ivy-1.5.xml" searched="true" original-local-location="/Users/bleonard/.ivy2/cache/commons-codec/commons-codec/ivy-1.5.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.pom"/>
+			<revision name="1.5" status="release" pubdate="20110324183406" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://commons.apache.org/codec/" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="103">
+				<metadata-artifact status="no" details="" size="6299" time="0" location="/Users/bleonard/.ivy2/cache/commons-codec/commons-codec/ivy-1.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.pom"/>
 				<caller organisation="com.twitter" name="parquet-column" conf="default, compile, runtime, master" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.6.0rc3"/>
 				<caller organisation="net.java.dev.jets3t" name="jets3t" conf="default, compile, runtime, master" rev="1.3" rev-constraint-default="1.3" rev-constraint-dynamic="1.3" callerrev="0.7.1"/>
 				<caller organisation="org.apache.hadoop" name="hadoop-core" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="1.0.4"/>
 				<caller organisation="commons-httpclient" name="commons-httpclient" conf="compile, runtime" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="3.1"/>
 				<caller organisation="com.twitter" name="parquet-encoding" conf="compile, runtime" rev="1.5" rev-constraint-default="1.5" rev-constraint-dynamic="1.5" callerrev="1.6.0rc3"/>
 				<artifacts>
-					<artifact name="commons-codec" type="jar" ext="jar" status="successful" details="" size="73098" time="73" location="/Users/bleonard/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.5.jar">
+					<artifact name="commons-codec" type="jar" ext="jar" status="no" details="" size="73098" time="0" location="/Users/bleonard/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.5.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/commons-codec/commons-codec/1.5/commons-codec-1.5.jar"/>
 					</artifact>
 				</artifacts>
@@ -147,31 +147,31 @@
 			</revision>
 		</module>
 		<module organisation="com.twitter" name="parquet-generator">
-			<revision name="1.6.0rc3" status="release" pubdate="20141002142838" resolver="public" artresolver="public" homepage="https://github.com/Parquet/parquet-mr" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="102">
-				<metadata-artifact status="successful" details="" size="952" time="60" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-generator/ivy-1.6.0rc3.xml" searched="true" original-local-location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-generator/ivy-1.6.0rc3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.pom"/>
+			<revision name="1.6.0rc3" status="release" pubdate="20141002142838" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="102">
+				<metadata-artifact status="no" details="" size="4670" time="0" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-generator/ivy-1.6.0rc3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.pom"/>
 				<caller organisation="com.twitter" name="parquet-encoding" conf="compile, runtime" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="1.6.0rc3"/>
 				<artifacts>
-					<artifact name="parquet-generator" type="jar" ext="jar" status="successful" details="" size="15700" time="58" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-generator/jars/parquet-generator-1.6.0rc3.jar">
+					<artifact name="parquet-generator" type="jar" ext="jar" status="no" details="" size="15700" time="0" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-generator/jars/parquet-generator-1.6.0rc3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/parquet-generator/1.6.0rc3/parquet-generator-1.6.0rc3.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="com.twitter" name="parquet-common">
-			<revision name="1.6.0rc3" status="release" pubdate="20141002142830" resolver="public" artresolver="public" homepage="https://github.com/Parquet/parquet-mr" downloaded="true" searched="true" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="100">
-				<metadata-artifact status="successful" details="" size="917" time="58" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-common/ivy-1.6.0rc3.xml" searched="true" original-local-location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-common/ivy-1.6.0rc3.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.pom"/>
+			<revision name="1.6.0rc3" status="release" pubdate="20141002142830" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/Parquet/parquet-mr" downloaded="false" searched="false" default="false" conf="compile, master(*), runtime, compile(*), runtime(*), master" position="100">
+				<metadata-artifact status="no" details="" size="4572" time="0" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-common/ivy-1.6.0rc3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.pom"/>
 				<caller organisation="com.twitter" name="parquet-column" conf="default, compile, runtime, master" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="1.6.0rc3"/>
 				<caller organisation="com.twitter" name="parquet-generator" conf="compile, runtime" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="1.6.0rc3"/>
 				<caller organisation="com.twitter" name="parquet-encoding" conf="compile, runtime" rev="1.6.0rc3" rev-constraint-default="1.6.0rc3" rev-constraint-dynamic="1.6.0rc3" callerrev="1.6.0rc3"/>
 				<artifacts>
-					<artifact name="parquet-common" type="jar" ext="jar" status="successful" details="" size="15733" time="55" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-common/jars/parquet-common-1.6.0rc3.jar">
+					<artifact name="parquet-common" type="jar" ext="jar" status="no" details="" size="15733" time="0" location="/Users/bleonard/.ivy2/cache/com.twitter/parquet-common/jars/parquet-common-1.6.0rc3.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/twitter/parquet-common/1.6.0rc3/parquet-common-1.6.0rc3.jar"/>
 					</artifact>
 				</artifacts>
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-catalyst_2.10">
-			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160218143554" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), test, compile, runtime" position="88">
+			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160306224701" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), test, compile, runtime" position="88">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.apache.spark" name="spark-sql_2.10" conf="test, compile, runtime" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
 				<artifacts>
@@ -191,7 +191,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-core_2.10">
-			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160218143554" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="1">
+			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160306224701" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.apache.spark" name="spark-catalyst_2.10" conf="test, compile, runtime" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
 				<caller organisation="org.apache.spark" name="spark-sql_2.10" conf="test, compile, runtime" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
@@ -1258,7 +1258,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-network-shuffle_2.10">
-			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160218143554" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="5">
+			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160306224701" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="5">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.apache.spark" name="spark-core_2.10" conf="compile" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
 				<artifacts>
@@ -1266,7 +1266,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-network-common_2.10">
-			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160218143537" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="2">
+			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160306224701" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="2">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.apache.spark" name="spark-core_2.10" conf="compile" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
 				<caller organisation="org.apache.spark" name="spark-network-shuffle_2.10" conf="compile" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>

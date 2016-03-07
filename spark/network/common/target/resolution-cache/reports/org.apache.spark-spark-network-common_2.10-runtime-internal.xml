@@ -7,7 +7,7 @@
 		revision="1.3.0-SNAPSHOT"
 		conf="runtime-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160218143542"/>
+		date="20160306224701"/>
 	<dependencies>
 		<module organisation="org.spark-project.spark" name="unused">
 			<revision name="1.0.0" status="release" pubdate="20141022000005" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="2">
@@ -22,11 +22,11 @@
 			</revision>
 		</module>
 		<module organisation="io.netty" name="netty-all">
-			<revision name="4.0.23.Final" status="release" pubdate="20140815110640" resolver="public" artresolver="public" homepage="" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="1">
-				<metadata-artifact status="successful" details="" size="17244" time="63" location="/Users/bleonard/.ivy2/cache/io.netty/netty-all/ivy-4.0.23.Final.xml" searched="true" original-local-location="/Users/bleonard/.ivy2/cache/io.netty/netty-all/ivy-4.0.23.Final.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.pom"/>
+			<revision name="4.0.23.Final" status="release" pubdate="20140815110640" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="1">
+				<metadata-artifact status="no" details="" size="15751" time="0" location="/Users/bleonard/.ivy2/cache/io.netty/netty-all/ivy-4.0.23.Final.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.pom"/>
 				<caller organisation="org.apache.spark" name="spark-network-common_2.10" conf="optional, compile, runtime, runtime-internal" rev="4.0.23.Final" rev-constraint-default="4.0.23.Final" rev-constraint-dynamic="4.0.23.Final" callerrev="1.3.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="netty-all" type="jar" ext="jar" status="successful" details="" size="1779991" time="1026" location="/Users/bleonard/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.23.Final.jar">
+					<artifact name="netty-all" type="jar" ext="jar" status="no" details="" size="1779991" time="0" location="/Users/bleonard/.ivy2/cache/io.netty/netty-all/jars/netty-all-4.0.23.Final.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/io/netty/netty-all/4.0.23.Final/netty-all-4.0.23.Final.jar"/>
 					</artifact>
 				</artifacts>

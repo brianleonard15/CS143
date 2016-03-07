@@ -7,10 +7,10 @@
 		revision="1.3.0-SNAPSHOT"
 		conf="test-internal"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160218143852"/>
+		date="20160306224715"/>
 	<dependencies>
 		<module organisation="org.apache.spark" name="spark-repl_2.10">
-			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160218143722" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="116">
+			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160306224704" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="116">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.apache.spark" name="spark-assembly_2.10" conf="test-internal, test, optional, compile, provided, runtime" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
 				<artifacts>
@@ -18,7 +18,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-graphx_2.10">
-			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160218143722" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="115">
+			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160306224701" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="115">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.apache.spark" name="spark-assembly_2.10" conf="test-internal, test, optional, compile, provided, runtime" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
 				<artifacts>
@@ -26,7 +26,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-mllib_2.10">
-			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160218143722" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="89">
+			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160306224701" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="89">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.apache.spark" name="spark-repl_2.10" conf="compile" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
 				<caller organisation="org.apache.spark" name="spark-assembly_2.10" conf="test-internal, test, optional, compile, provided, runtime" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
@@ -133,7 +133,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-sql_2.10">
-			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160218143554" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="91">
+			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160306224701" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="91">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.apache.spark" name="spark-mllib_2.10" conf="compile" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
 				<caller organisation="org.apache.spark" name="spark-assembly_2.10" conf="test-internal, test, optional, compile, provided, runtime" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
@@ -303,7 +303,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-catalyst_2.10">
-			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160218143554" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="92">
+			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160306224701" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="92">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.apache.spark" name="spark-sql_2.10" conf="compile" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
 				<artifacts>
@@ -340,7 +340,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-streaming_2.10">
-			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160218143554" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="90">
+			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160306224701" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="90">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.apache.spark" name="spark-mllib_2.10" conf="compile" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
 				<caller organisation="org.apache.spark" name="spark-assembly_2.10" conf="test-internal, test, optional, compile, provided, runtime" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
@@ -349,7 +349,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-bagel_2.10">
-			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160218143722" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="88">
+			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160306224701" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="88">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.apache.spark" name="spark-repl_2.10" conf="compile" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
 				<caller organisation="org.apache.spark" name="spark-assembly_2.10" conf="test-internal, test, optional, compile, provided, runtime" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
@@ -358,7 +358,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-core_2.10">
-			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160218143554" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="1">
+			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160306224701" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="1">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.apache.spark" name="spark-catalyst_2.10" conf="compile" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
 				<caller organisation="org.apache.spark" name="spark-bagel_2.10" conf="compile" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
@@ -1461,7 +1461,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-network-shuffle_2.10">
-			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160218143554" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="5">
+			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160306224701" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="5">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.apache.spark" name="spark-core_2.10" conf="compile" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
 				<artifacts>
@@ -1469,7 +1469,7 @@
 			</revision>
 		</module>
 		<module organisation="org.apache.spark" name="spark-network-common_2.10">
-			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160218143537" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="2">
+			<revision name="1.3.0-SNAPSHOT" status="integration" pubdate="20160306224701" resolver="inter-project" artresolver="inter-project" downloaded="false" searched="false" default="false" conf="default(compile), compile" position="2">
 				<metadata-artifact status="failed" details="" size="0" time="0" searched="false"/>
 				<caller organisation="org.apache.spark" name="spark-core_2.10" conf="compile" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>
 				<caller organisation="org.apache.spark" name="spark-network-shuffle_2.10" conf="compile" rev="1.3.0-SNAPSHOT" rev-constraint-default="1.3.0-SNAPSHOT" rev-constraint-dynamic="1.3.0-SNAPSHOT" callerrev="1.3.0-SNAPSHOT"/>

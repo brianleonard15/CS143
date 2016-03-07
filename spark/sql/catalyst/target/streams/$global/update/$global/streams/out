@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d5df478[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ce56d6a[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-compiler;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-compiler;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT->org.scala-lang#scala-compiler;2.10.4 [compile->runtime][0m
@@ -172,6 +172,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.3.0-SNAPSHOT->org.apache.hadoop#hadoop-client;1.0.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-client;1.0.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-client;1.0.4 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0mno default cache defined: set to /Users/bleonard/.ivy2/cache[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.hadoop#hadoop-client;1.0.4[0m
 [0m[[0mdebug[0m] [0m	found org.apache.hadoop#hadoop-client;1.0.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-core_2.10;1.3.0-SNAPSHOT->org.apache.hadoop#hadoop-client;1.0.4 [compile->runtime][0m
@@ -1479,21 +1480,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scalamacros#quasiquotes_2.10;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalamacros#quasiquotes_2.10;2.0.1 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.scalamacros#quasiquotes_2.10;2.0.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.scalamacros#quasiquotes_2.10;2.0.1 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/bleonard/.ivy2/local/org.scalamacros/quasiquotes_2.10/2.0.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scalamacros#quasiquotes_2.10;2.0.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.scalamacros#quasiquotes_2.10;2.0.1[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom (2.0.1)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scalamacros#quasiquotes_2.10;2.0.1!quasiquotes_2.10.pom(pom.original) (54ms)[0m
-[0m[[0mdebug[0m] [0m		tried /Users/bleonard/.ivy2/local/org.scalamacros/quasiquotes_2.10/2.0.1/jars/quasiquotes_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar[0m
-[0m[[0mdebug[0m] [0m	found org.scalamacros#quasiquotes_2.10;2.0.1 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalamacros#quasiquotes_2.10;2.0.1[0m
+[0m[[0mdebug[0m] [0m	found org.scalamacros#quasiquotes_2.10;2.0.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT->org.scalamacros#quasiquotes_2.10;2.0.1 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#quasiquotes_2.10;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
@@ -7038,21 +7026,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT->org.scalamacros#paradise_2.10.4;2.0.1 [plugin->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scalamacros#paradise_2.10.4;2.0.1 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scalamacros#paradise_2.10.4;2.0.1 {plugin=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.scalamacros#paradise_2.10.4;2.0.1 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.scalamacros#paradise_2.10.4;2.0.1 {plugin=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/bleonard/.ivy2/local/org.scalamacros/paradise_2.10.4/2.0.1/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scalamacros#paradise_2.10.4;2.0.1[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalamacros/paradise_2.10.4/2.0.1/paradise_2.10.4-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.scalamacros#paradise_2.10.4;2.0.1[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/scalamacros/paradise_2.10.4/2.0.1/paradise_2.10.4-2.0.1.pom (2.0.1)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/scalamacros/paradise_2.10.4/2.0.1/paradise_2.10.4-2.0.1.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalamacros/paradise_2.10.4/2.0.1/paradise_2.10.4-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalamacros/paradise_2.10.4/2.0.1/paradise_2.10.4-2.0.1.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/scalamacros/paradise_2.10.4/2.0.1/paradise_2.10.4-2.0.1.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scalamacros#paradise_2.10.4;2.0.1!paradise_2.10.4.pom(pom.original) (54ms)[0m
-[0m[[0mdebug[0m] [0m		tried /Users/bleonard/.ivy2/local/org.scalamacros/paradise_2.10.4/2.0.1/jars/paradise_2.10.4.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalamacros/paradise_2.10.4/2.0.1/paradise_2.10.4-2.0.1.jar[0m
-[0m[[0mdebug[0m] [0m	found org.scalamacros#paradise_2.10.4;2.0.1 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scalamacros#paradise_2.10.4;2.0.1[0m
+[0m[[0mdebug[0m] [0m	found org.scalamacros#paradise_2.10.4;2.0.1 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT->org.scalamacros#paradise_2.10.4;2.0.1 [plugin->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT->org.scalamacros#paradise_2.10.4;2.0.1 [plugin->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scalamacros#paradise_2.10.4;2.0.1->org.scala-lang#scala-library;2.10.4 [compile->master(*)][0m
@@ -7126,12 +7101,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.4!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.4!scala-reflect.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/scalamacros/quasiquotes_2.10/2.0.1/quasiquotes_2.10-2.0.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalamacros#quasiquotes_2.10;2.0.1!quasiquotes_2.10.jar (448ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalamacros#quasiquotes_2.10;2.0.1!quasiquotes_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.spark-project.spark#unused;1.0.0!unused.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.guava#guava;14.0.1!guava.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.twitter#chill_2.10;0.5.0!chill_2.10.jar[0m
@@ -7227,15 +7197,10 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-tools.testing#test-interface;0.5!test-interface.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8!genjavadoc-plugin_2.10.4.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/scalamacros/paradise_2.10.4/2.0.1/paradise_2.10.4-2.0.1.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/scalamacros/paradise_2.10.4/2.0.1/paradise_2.10.4-2.0.1.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalamacros/paradise_2.10.4/2.0.1/paradise_2.10.4-2.0.1.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/scalamacros/paradise_2.10.4/2.0.1/paradise_2.10.4-2.0.1.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/scalamacros/paradise_2.10.4/2.0.1/paradise_2.10.4-2.0.1.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scalamacros#paradise_2.10.4;2.0.1!paradise_2.10.4.jar (864ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalamacros#paradise_2.10.4;2.0.1!paradise_2.10.4.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 945ms :: artifacts dl 1376ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 767ms :: artifacts dl 28ms[0m
 [0m[[0mdebug[0m] [0m	report for org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT compile produced in /Users/bleonard/Documents/Databases/spark/sql/catalyst/target/resolution-cache/reports/org.apache.spark-spark-catalyst_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT runtime produced in /Users/bleonard/Documents/Databases/spark/sql/catalyst/target/resolution-cache/reports/org.apache.spark-spark-catalyst_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT test produced in /Users/bleonard/Documents/Databases/spark/sql/catalyst/target/resolution-cache/reports/org.apache.spark-spark-catalyst_2.10-test.xml[0m
@@ -7249,5 +7214,5 @@
 [0m[[0mdebug[0m] [0m	report for org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT docs produced in /Users/bleonard/Documents/Databases/spark/sql/catalyst/target/resolution-cache/reports/org.apache.spark-spark-catalyst_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT pom produced in /Users/bleonard/Documents/Databases/spark/sql/catalyst/target/resolution-cache/reports/org.apache.spark-spark-catalyst_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for org.apache.spark#spark-catalyst_2.10;1.3.0-SNAPSHOT scala-tool produced in /Users/bleonard/Documents/Databases/spark/sql/catalyst/target/resolution-cache/reports/org.apache.spark-spark-catalyst_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (945ms resolve - 1376ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (767ms resolve - 28ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m

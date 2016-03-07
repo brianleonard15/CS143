@@ -7,15 +7,15 @@
 		revision="1.3.0-SNAPSHOT"
 		conf="plugin"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20160218143537"/>
+		date="20160306224701"/>
 	<dependencies>
 		<module organisation="com.typesafe.genjavadoc" name="genjavadoc-plugin_2.10.4">
-			<revision name="0.8" status="release" pubdate="20140625071014" resolver="public" artresolver="public" homepage="http://github.com/typesafehub/genjavadoc" downloaded="true" searched="true" default="false" conf="default(compile), default, compile, runtime, master" position="0">
+			<revision name="0.8" status="release" pubdate="20140625071014" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/typesafehub/genjavadoc" downloaded="false" searched="false" default="false" conf="default(compile), default, compile, runtime, master" position="0">
 				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="successful" details="" size="1637" time="64" location="/Users/bleonard/.ivy2/cache/com.typesafe.genjavadoc/genjavadoc-plugin_2.10.4/ivy-0.8.xml" searched="true" original-local-location="/Users/bleonard/.ivy2/cache/com.typesafe.genjavadoc/genjavadoc-plugin_2.10.4/ivy-0.8.xml.original" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.pom"/>
+				<metadata-artifact status="no" details="" size="2704" time="0" location="/Users/bleonard/.ivy2/cache/com.typesafe.genjavadoc/genjavadoc-plugin_2.10.4/ivy-0.8.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.pom"/>
 				<caller organisation="org.apache.spark" name="spark-parent_2.10" conf="plugin" rev="0.8" rev-constraint-default="0.8" rev-constraint-dynamic="0.8" callerrev="1.3.0-SNAPSHOT"/>
 				<artifacts>
-					<artifact name="genjavadoc-plugin_2.10.4" type="jar" ext="jar" status="successful" details="" size="150573" time="141" location="/Users/bleonard/.ivy2/cache/com.typesafe.genjavadoc/genjavadoc-plugin_2.10.4/jars/genjavadoc-plugin_2.10.4-0.8.jar">
+					<artifact name="genjavadoc-plugin_2.10.4" type="jar" ext="jar" status="no" details="" size="150573" time="0" location="/Users/bleonard/.ivy2/cache/com.typesafe.genjavadoc/genjavadoc-plugin_2.10.4/jars/genjavadoc-plugin_2.10.4-0.8.jar">
 						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/genjavadoc/genjavadoc-plugin_2.10.4/0.8/genjavadoc-plugin_2.10.4-0.8.jar"/>
 					</artifact>
 				</artifacts>

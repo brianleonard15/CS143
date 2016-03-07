@@ -26,6 +26,7 @@ public  class DiskPartition {
    * Uses the {@link Files} API to write a byte array representing data to a file.
    */
   private  void spillPartitionToDisk () { throw new RuntimeException(); }
+  private  void spillAndClear () { throw new RuntimeException(); }
   /**
    * If this partition has been closed, this method returns an Iterator of all the
    * data that was written to disk by this partition.

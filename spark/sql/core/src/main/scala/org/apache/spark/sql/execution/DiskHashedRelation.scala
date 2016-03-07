@@ -65,6 +65,9 @@ private[sql] class DiskPartition (
   def insert(row: Row) = {
     // IMPLEMENT ME
     // Done
+    if (inputClosed) {
+      throw new SparkException("inputClosed")
+    }
     data.add(row)
     var partitionSize: Int = measurePartitionSize()
     if (partitionSize > blockSize) {
@@ -126,15 +129,17 @@ private[sql] class DiskPartition (
       override def hasNext() = {
         // IMPLEMENT ME
         // Done
-        if (currentIterator != null && !currentIterator.hasNext) {
-          if (chunkSizeIterator.hasNext) {
-            fetchNextChunk()
+        var doesHaveNext = false;
+        if (currentIterator != null) {
+          if (currentIterator.hasNext) {
+            doesHaveNext = true
           }
-          else {
-            false
+          else if (chunkSizeIterator.hasNext) {
+            fetchNextChunk()
+            doesHaveNext = true;
           }
         }
-        true
+        doesHaveNext
       }
 
       /**

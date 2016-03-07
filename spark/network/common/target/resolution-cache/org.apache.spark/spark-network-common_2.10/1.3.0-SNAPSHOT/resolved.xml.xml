@@ -4,7 +4,7 @@
 		module="spark-network-common_2.10"
 		revision="1.3.0-SNAPSHOT"
 		status="integration"
-		publication="20160218143537"
+		publication="20160306224701"
 	>
 		<description>
 		spark-network-common

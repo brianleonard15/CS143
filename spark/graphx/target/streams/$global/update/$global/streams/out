@@ -7,7 +7,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7fc9388[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@46786daf[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
@@ -144,7 +144,6 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;1.0.4->org.apache.hadoop#hadoop-core;1.0.4 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.apache.hadoop#hadoop-core;1.0.4 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.hadoop#hadoop-core;1.0.4 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0mno default cache defined: set to /Users/bleonard/.ivy2/cache[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.hadoop#hadoop-core;1.0.4[0m
 [0m[[0mdebug[0m] [0m	found org.apache.hadoop#hadoop-core;1.0.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.hadoop#hadoop-client;1.0.4->org.apache.hadoop#hadoop-core;1.0.4 [compile->compile(*)][0m
@@ -1464,24 +1463,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT->org.jblas#jblas;1.2.3 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.jblas#jblas;1.2.3 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.jblas#jblas;1.2.3 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.jblas#jblas;1.2.3 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.jblas#jblas;1.2.3 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/bleonard/.ivy2/local/org.jblas/jblas/1.2.3/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.jblas#jblas;1.2.3[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for org.jblas#jblas;1.2.3[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.pom (1.2.3)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.jblas#jblas;1.2.3!jblas.pom(pom.original) (58ms)[0m
-[0m[[0minfo[0m] [0mResolving org.sonatype.oss#oss-parent;7 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.sonatype.oss#oss-parent;7 {}[0m
-[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.sonatype.oss#oss-parent;7[0m
-[0m[[0mdebug[0m] [0m		tried /Users/bleonard/.ivy2/local/org.jblas/jblas/1.2.3/jars/jblas.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.jar[0m
-[0m[[0mdebug[0m] [0m	found org.jblas#jblas;1.2.3 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.jblas#jblas;1.2.3[0m
+[0m[[0mdebug[0m] [0m	found org.jblas#jblas;1.2.3 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT->org.jblas#jblas;1.2.3 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT->org.jblas#jblas;1.2.3 [compile->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT->org.jblas#jblas;1.2.3 [compile->master][0m
@@ -3678,41 +3661,15 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT->com.novocode#junit-interface;0.9 [test->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving com.novocode#junit-interface;0.9 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.novocode#junit-interface;0.9 {test=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving com.novocode#junit-interface;0.9 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.novocode#junit-interface;0.9 {test=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/bleonard/.ivy2/local/com.novocode/junit-interface/0.9/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for com.novocode#junit-interface;0.9[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/novocode/junit-interface/0.9/junit-interface-0.9.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for com.novocode#junit-interface;0.9[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/com/novocode/junit-interface/0.9/junit-interface-0.9.pom (0.9)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/com/novocode/junit-interface/0.9/junit-interface-0.9.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/novocode/junit-interface/0.9/junit-interface-0.9.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/novocode/junit-interface/0.9/junit-interface-0.9.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/novocode/junit-interface/0.9/junit-interface-0.9.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.novocode#junit-interface;0.9!junit-interface.pom(pom.original) (68ms)[0m
-[0m[[0mdebug[0m] [0m		tried /Users/bleonard/.ivy2/local/com.novocode/junit-interface/0.9/jars/junit-interface.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/novocode/junit-interface/0.9/junit-interface-0.9.jar[0m
-[0m[[0mdebug[0m] [0m	found com.novocode#junit-interface;0.9 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: com.novocode#junit-interface;0.9[0m
+[0m[[0mdebug[0m] [0m	found com.novocode#junit-interface;0.9 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT->com.novocode#junit-interface;0.9 [test->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT->com.novocode#junit-interface;0.9 [test->compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.9->junit#junit-dep;4.8.2 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving junit#junit-dep;4.8.2 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: junit#junit-dep;4.8.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving junit#junit-dep;4.8.2 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: junit#junit-dep;4.8.2 {compile=[compile(*), master(*)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried /Users/bleonard/.ivy2/local/junit/junit-dep/4.8.2/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for junit#junit-dep;4.8.2[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/junit/junit-dep/4.8.2/junit-dep-4.8.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: found md file for junit#junit-dep;4.8.2[0m
-[0m[[0mdebug[0m] [0m		=> https://repo1.maven.org/maven2/junit/junit-dep/4.8.2/junit-dep-4.8.2.pom (4.8.2)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo1.maven.org/maven2/junit/junit-dep/4.8.2/junit-dep-4.8.2.pom ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/junit/junit-dep/4.8.2/junit-dep-4.8.2.pom[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/junit/junit-dep/4.8.2/junit-dep-4.8.2.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/junit/junit-dep/4.8.2/junit-dep-4.8.2.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] junit#junit-dep;4.8.2!junit-dep.pom(pom.original) (68ms)[0m
-[0m[[0mdebug[0m] [0m		tried /Users/bleonard/.ivy2/local/junit/junit-dep/4.8.2/jars/junit-dep.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/junit/junit-dep/4.8.2/junit-dep-4.8.2.jar[0m
-[0m[[0mdebug[0m] [0m	found junit#junit-dep;4.8.2 in public[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: junit#junit-dep;4.8.2[0m
+[0m[[0mdebug[0m] [0m	found junit#junit-dep;4.8.2 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies com.novocode#junit-interface;0.9->junit#junit-dep;4.8.2 [compile->compile(*)][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies junit#junit-dep;4.8.2->org.hamcrest#hamcrest-core;1.1 [compile->master(*)][0m
 [0m[[0minfo[0m] [0mResolving org.hamcrest#hamcrest-core;1.1 ...[0m
@@ -7071,12 +7028,7 @@
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.4!scala-library.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/org/jblas/jblas/1.2.3/jblas-1.2.3.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.jblas#jblas;1.2.3!jblas.jar (4678ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.jblas#jblas;1.2.3!jblas.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.eclipse.jetty#jetty-server;8.1.14.v20131031!jetty-server.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.spark-project.spark#unused;1.0.0!unused.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.guava#guava;14.0.1!guava.jar(bundle)[0m
@@ -7168,27 +7120,17 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] commons-io#commons-io;2.4!commons-io.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalatest#scalatest_2.10;2.2.1!scalatest_2.10.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalacheck#scalacheck_2.10;1.11.3!scalacheck_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/com/novocode/junit-interface/0.9/junit-interface-0.9.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/com/novocode/junit-interface/0.9/junit-interface-0.9.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/novocode/junit-interface/0.9/junit-interface-0.9.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/com/novocode/junit-interface/0.9/junit-interface-0.9.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/com/novocode/junit-interface/0.9/junit-interface-0.9.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.novocode#junit-interface;0.9!junit-interface.jar (57ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.novocode#junit-interface;0.9!junit-interface.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.4!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo1.maven.org/maven2/junit/junit-dep/4.8.2/junit-dep-4.8.2.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo1.maven.org/maven2/junit/junit-dep/4.8.2/junit-dep-4.8.2.jar ...[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/junit/junit-dep/4.8.2/junit-dep-4.8.2.jar[0m
-[0m[[0mdebug[0m] [0m	public: downloading https://repo1.maven.org/maven2/junit/junit-dep/4.8.2/junit-dep-4.8.2.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo1.maven.org/maven2/junit/junit-dep/4.8.2/junit-dep-4.8.2.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] junit#junit-dep;4.8.2!junit-dep.jar (156ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] junit#junit-dep;4.8.2!junit-dep.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-tools.testing#test-interface;0.5!test-interface.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.hamcrest#hamcrest-core;1.1!hamcrest-core.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.typesafe.genjavadoc#genjavadoc-plugin_2.10.4;0.8!genjavadoc-plugin_2.10.4.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.4!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 1086ms :: artifacts dl 4917ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 920ms :: artifacts dl 43ms[0m
 [0m[[0mdebug[0m] [0m	report for org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT compile produced in /Users/bleonard/Documents/Databases/spark/graphx/target/resolution-cache/reports/org.apache.spark-spark-graphx_2.10-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT runtime produced in /Users/bleonard/Documents/Databases/spark/graphx/target/resolution-cache/reports/org.apache.spark-spark-graphx_2.10-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT test produced in /Users/bleonard/Documents/Databases/spark/graphx/target/resolution-cache/reports/org.apache.spark-spark-graphx_2.10-test.xml[0m
@@ -7202,5 +7144,5 @@
 [0m[[0mdebug[0m] [0m	report for org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT docs produced in /Users/bleonard/Documents/Databases/spark/graphx/target/resolution-cache/reports/org.apache.spark-spark-graphx_2.10-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT pom produced in /Users/bleonard/Documents/Databases/spark/graphx/target/resolution-cache/reports/org.apache.spark-spark-graphx_2.10-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for org.apache.spark#spark-graphx_2.10;1.3.0-SNAPSHOT scala-tool produced in /Users/bleonard/Documents/Databases/spark/graphx/target/resolution-cache/reports/org.apache.spark-spark-graphx_2.10-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (1086ms resolve - 4917ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (920ms resolve - 43ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
