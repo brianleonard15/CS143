@@ -2,6 +2,7 @@ package org.apache.spark.sql.execution;
 /**
  * :: DeveloperApi ::
  * Performs a sort on-heap.
+ * <p>
  * @param global when true performs a global sort of all partitions by shuffling the data first
  *               if necessary.
  */

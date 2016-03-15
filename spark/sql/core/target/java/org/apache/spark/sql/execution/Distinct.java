@@ -2,6 +2,7 @@ package org.apache.spark.sql.execution;
 /**
  * :: DeveloperApi ::
  * Computes the set of distinct input rows using a HashSet.
+ * <p>
  * @param partial when true the distinct operation is performed partially, per partition, without
  *                shuffling the data.
  * @param child the input query plan.

@@ -97,29 +97,44 @@ case class PartitionProject(projectList: Seq[Expression], child: SparkPlan) exte
   def generateIterator(input: Iterator[Row]): Iterator[Row] = {
     // This is the key generator for the course-grained external hashing.
     val keyGenerator = CS143Utils.getNewProjection(projectList, child.output)
-
+    // DONE
     // IMPLEMENT ME
+    var iterator : Iterator[Row] = null
+    val partitionIterator = DiskHashedRelation(input, keyGenerator).getIterator()
 
     new Iterator[Row] {
       def hasNext() = {
+        // DONE
         // IMPLEMENT ME
-        false
+        if (iterator!=null && iterator.hasNext) {
+          true
+        }
+        else {
+          fetchNextPartition()
+        }
       }
 
       def next() = {
+        // Done
         // IMPLEMENT ME
-        null
+        iterator.next()
       }
 
       /**
-       * This fetches the next partition over which we will iterate or returns false if there are no more partitions
-       * over which we can iterate.
-       *
-       * @return
-       */
+        * This fetches the next partition over which we will iterate or returns false if there are no more partitions
+        * over which we can iterate.
+        *
+        * @return
+        */
       private def fetchNextPartition(): Boolean  = {
+        // Done
         // IMPLEMENT ME
-        false
+        if (!partitionIterator.hasNext) false
+        else {
+          var partitionNext = partitionIterator.next()
+          iterator = CS143Utils.generateCachingIterator(projectList, child.output)(partitionNext.getData())
+          hasNext()
+        }
       }
     }
   }
@@ -271,7 +286,8 @@ case class TakeOrdered(limit: Int, sortOrder: Seq[SortOrder], child: SparkPlan) 
 /**
  * :: DeveloperApi ::
  * Performs a sort on-heap.
- * @param global when true performs a global sort of all partitions by shuffling the data first
+  *
+  * @param global when true performs a global sort of all partitions by shuffling the data first
  *               if necessary.
  */
 @DeveloperApi
@@ -296,7 +312,8 @@ case class Sort(
 /**
  * :: DeveloperApi ::
  * Performs a sort, spilling to disk as needed.
- * @param global when true performs a global sort of all partitions by shuffling the data first
+  *
+  * @param global when true performs a global sort of all partitions by shuffling the data first
  *               if necessary.
  */
 @DeveloperApi
@@ -323,7 +340,8 @@ case class ExternalSort(
 /**
  * :: DeveloperApi ::
  * Computes the set of distinct input rows using a HashSet.
- * @param partial when true the distinct operation is performed partially, per partition, without
+  *
+  * @param partial when true the distinct operation is performed partially, per partition, without
  *                shuffling the data.
  * @param child the input query plan.
  */
